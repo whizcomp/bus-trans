@@ -12,6 +12,7 @@ import Receipt from "./components/receipt";
 import Logout from "./logout";
 import Footer from "./components/footer";
 import Histry from "./components/history";
+import PayMpesa from "./components/payMpesa";
 
 export default class App extends Component {
   state = {};
@@ -50,6 +51,8 @@ export default class App extends Component {
         </AppBar>
         <Switch>
           <Route path="/receipt/:id"  render={props => <Receipt {...props} user={user} />} />
+          <Route path="/payment/:id"  render={props => <PayMpesa {...props} user={user} />} />
+          
           <Route path="/register" component={Register} />
           <Route path="/login" component={Login} />
           <Route path="/bus" component={Bus} />

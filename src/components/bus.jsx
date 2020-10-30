@@ -65,7 +65,7 @@ class Bus extends Form {
               <Input
                 name="driver"
                 value={data.driver}
-                label="Drivers"
+                label="Driver"
                 type="text"
                 onChange={this.handleChange}
                 errors={errors.driver}

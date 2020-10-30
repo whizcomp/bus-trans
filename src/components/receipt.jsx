@@ -23,7 +23,6 @@ export default class Receipt extends Component {
       this.setState({ info,user ,isLoading:false})
       console.log(info)
       console.log(user)
-
     } catch (error) {
       alert("an error occurred");
     }

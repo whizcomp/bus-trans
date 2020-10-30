@@ -52,7 +52,7 @@ class Booking extends Component {
     try {
       const { data: book } = await submitBooking(travel);
       console.log(book._id);
-      this.props.history.push(`/receipt/${book._id}`);
+      this.props.history.push(`/payment/${book._id}`);
     } catch (error) {
       alert("try again");
     }

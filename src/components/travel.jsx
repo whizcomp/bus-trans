@@ -40,11 +40,10 @@ const style = theme => ({
     const endPoint="http://localhost:5000/api"
     console.log(this.state.data)
         try {
-       
             const { data  } = await http.get(`${endPoint}/bus/${this.state.data.plate}`);
             const plateId = data._id
                await submitTravel(this.state.data,plateId)
-             this.props.history.push(`/history`)
+             this.props.history.push("/history")
          
         } catch (error) {
             if (error.response && error.response.status === 400) {
